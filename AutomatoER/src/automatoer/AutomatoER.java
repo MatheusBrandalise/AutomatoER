@@ -14,7 +14,8 @@ public class AutomatoER {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite a entrada: ");
-        entrada = sc.nextLine().trim();
+        entrada = sc.nextLine().trim().toUpperCase();
+        
 
         if (validacao.validateAlphabet(entrada)) {
             while (position < entrada.length()) {
